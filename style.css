@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://dbfzworldtour.com/wp-content/uploads/2019/06/year-two-stage.jpg");
+  background-position: center;
+  color: white;
+}
+.game {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  border-radius: 8px;
+  border: 5px inset gold;
+  width: 200px;
+}
+
+span {
+  margin-top: 200px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+.player1,
+.player2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: orange;
+}
+
+.effect {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+  filter: grayscale(100%);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

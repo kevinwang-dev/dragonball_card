@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Card Battle</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="player1">
+                <img src="https://static.wikia.nocookie.net/dragonball/images/5/5b/Gokusteppingoutofaspaceship.jpg/revision/latest/scale-to-width-down/226?cb=20201225233414" alt="">
+                <progress id="ghealth" value="100" max="100"></progress>
+                <button>Attack</button>
+                <h2>Score: <span class="g-score">100</span></h2>
+            </div>
+            <span>VS</span>
+          
+            <div class="player2">
+                <img src="https://static.wikia.nocookie.net/dragonball/images/2/25/Vegeta_DBZ_Ep_222_002.png/revision/latest/scale-to-width-down/217?cb=20191124215151" alt="">
+                <progress id="vhealth" value="100" max="100"></progress>
+
+                <button>Attack</button>
+                <h2>Score: <span class="v-score">100</span></h2>
+            </div>
+            
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+</body>
+</html>
